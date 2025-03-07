@@ -1,6 +1,6 @@
 ---
 layout: layout.vto
-title: Paolo Di Pasquale - The virtual habitat of a crafty web developer
+title: Paolo Di Pasquale - Research
 ---
 
 ## Research
