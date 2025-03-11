@@ -13,6 +13,11 @@
   </header>
   <main>
     {{ content }}
+    <ul>
+      {{ for post of search.pages("post") }}
+      <li>{{ post.title }}</li>
+      {{ /for }}
+    </ul>
   </main>
   <footer class="site-footer">
     <p>&copy; Paolo Di Pasquale {{ new Date().getFullYear() }}</p>
