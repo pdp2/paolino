@@ -5,11 +5,13 @@ import typography from "npm:@tailwindcss/typography";
 
 const site = lume();
 
-site.use(tailwindcss({
-  options: {
-    plugins: [typography],
-  },
-}));
+site.use(
+  tailwindcss({
+    options: {
+      plugins: [typography],
+    },
+  })
+);
 site.use(postcss());
 
 export default site;

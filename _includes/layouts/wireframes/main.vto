@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body class="prose container mx-auto">
+    <h2>Wireframes</h2>
+    <main>
+      <ul>
+        {{ for page of search.pages("wireframe") }}
+        <li>
+          <a href="{{ page.url }}">{{ page.title }}</a>
+        </li>
+        {{ /for }}
+      </ul>
+    </main>
+    <footer class="px-2">
+      <p>&copy; Paolo Di Pasquale {{ new Date().getFullYear() }}</p>
+    </footer>
+  </body>
+</html>
