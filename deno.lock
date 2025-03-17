@@ -32,7 +32,9 @@
     "npm:@js-temporal/polyfill@0.4.4": "0.4.4",
     "npm:@tailwindcss/typography@*": "0.5.16_tailwindcss@3.4.14__postcss@8.4.47",
     "npm:@types/estree@1.0.6": "1.0.6",
+    "npm:@types/react-dom@18.3.1": "18.3.1",
     "npm:@types/react@*": "19.0.10",
+    "npm:@types/react@18.3.12": "18.3.12",
     "npm:autoprefixer@10.4.20": "10.4.20_postcss@8.4.47",
     "npm:estree-walker@3.0.3": "3.0.3",
     "npm:markdown-it-attrs@4.2.0": "4.2.0_markdown-it@14.1.0",
@@ -42,7 +44,6 @@
     "npm:postcss-import@16.1.0": "16.1.0_postcss@8.4.47",
     "npm:postcss@8.4.47": "8.4.47",
     "npm:react-dom@18.3.1": "18.3.1_react@18.3.1",
-    "npm:react@*": "18.3.1",
     "npm:react@18.3.1": "18.3.1",
     "npm:tailwindcss@3.4.14": "3.4.14_postcss@8.4.47"
   },
@@ -213,6 +214,22 @@
     },
     "@types/estree@1.0.6": {
       "integrity": "sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw=="
+    },
+    "@types/prop-types@15.7.14": {
+      "integrity": "sha512-gNMvNH49DJ7OJYv+KAKn0Xp45p8PLl6zo2YnvDIbTd4J6MER2BmWN49TG7n9LvkyihINxeKW8+3bfS2yDC9dzQ=="
+    },
+    "@types/react-dom@18.3.1": {
+      "integrity": "sha512-qW1Mfv8taImTthu4KoXgDfLuk4bydU6Q/TkADnDWWHwi4NX4BR+LWfTp2sVmTqRrsHvyDDTelgelxJ+SsejKKQ==",
+      "dependencies": [
+        "@types/react@19.0.10"
+      ]
+    },
+    "@types/react@18.3.12": {
+      "integrity": "sha512-D2wOSq/d6Agt28q7rSI3jhU7G6aiuzljDGZ2hTZHIkrTLUI+AF3WMeKkEZ9nN2fkBAlcktT6vcZjDFiIhMYEQw==",
+      "dependencies": [
+        "@types/prop-types",
+        "csstype"
+      ]
     },
     "@types/react@19.0.10": {
       "integrity": "sha512-JuRQ9KXLEjaUNjTWpzuR231Z2WpIwczOkBEIvbHNCzQefFIT0L8IqE6NV6ULLyC1SI/i234JnDoMkfg+RjQj2g==",
@@ -879,6 +896,9 @@
       "integrity": "sha512-+hSoy/QHluxmC9kCIJyL/uyFmLmc+e5CFR5Wa+bpIhIj85LVb9ZH2nVnqrHoSvKogwODv0ClqZkmiSSaIH5LTA=="
     }
   },
+  "redirects": {
+    "https://esm.sh/@types/react@~18.2.79/jsx-runtime.d.ts": "https://esm.sh/@types/react@18.2.79/jsx-runtime.d.ts"
+  },
   "remote": {
     "https://deno.land/std@0.170.0/_util/asserts.ts": "d0844e9b62510f89ce1f9878b046f6a57bf88f208a10304aab50efcb48365272",
     "https://deno.land/std@0.170.0/_util/os.ts": "8a33345f74990e627b9dfe2de9b040004b08ea5146c7c9e8fe9a29070d193934",
@@ -1109,12 +1129,9 @@
     "https://deno.land/x/vento@v1.12.11/src/js.ts": "c4ac5e2b2cd2995523d3167c5708c424686fd30d2d3951ff965a76dbdfb74e37",
     "https://deno.land/x/vento@v1.12.11/src/loader.ts": "c05add67f582e937ee611852075ce2cc038b5e80e3e609eef96fa5ed74a5086c",
     "https://deno.land/x/vento@v1.12.11/src/tokenizer.ts": "127ddad02054f63b8b646e4dfbf555e1e34e9b8dcbd58d86b3729a4de95abd27",
-    "https://deno.land/x/vento@v1.12.11/src/transformer.ts": "587a0b107a2bd1437a3093c4c44c07e4fdf3abfaaf8e845767b69bd34a039154"
-  },
-  "workspace": {
-    "dependencies": [
-      "npm:@types/react@*",
-      "npm:react@*"
-    ]
+    "https://deno.land/x/vento@v1.12.11/src/transformer.ts": "587a0b107a2bd1437a3093c4c44c07e4fdf3abfaaf8e845767b69bd34a039154",
+    "https://esm.sh/react@18.2.0/denonext/jsx-runtime.mjs": "82f5137c9609f7b42ca13787d97b8c2dc55cfb8ce378c788791c156087a13cb3",
+    "https://esm.sh/react@18.2.0/denonext/react.mjs": "a986c2876dc2f73879f395e677dc34cb751f260e69db16364810655f884df173",
+    "https://esm.sh/react@18.2.0/jsx-runtime": "0bb3cca902d25a6827ac8153c8038b637e21bd20180bd58e827515d67de80582"
   }
 }

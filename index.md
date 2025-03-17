@@ -1,5 +1,5 @@
 ---
-layout: layouts/main.vto
+layout: layouts/main.tsx
 title: Paolo Di Pasquale - Full-stack web engineer
 ---
 
